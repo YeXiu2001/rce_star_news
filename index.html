@@ -2,12 +2,71 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" user-scalable="no">
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+  <title>RCE Star News</title>
+  <link rel="icon" type="image/x-icon" href="assets/img/rcestarnews_logo_whitebg.jpg">
+  <meta name="description" content="RCE Star News - Your source for the latest news and updates">
+  <meta name="keywords" content="news, updates, RCE, Star News, current events">
+  <meta name="author" content="RCE Star News Team">
+  <meta property="og:title" content="RCE Star News">
+  <meta property="og:description" content="Your source for the latest news and updates">
+  <meta property="og:type" content="website">
 </head>
 <body>
-  <button class="bg-sky-500 hover:bg-sky-700 px-4 py-2 rounded-lg text-white font-medium">
-    Save changes
-  </button>
+  <!-- this section is for the company name and contact -->
+  <header>
+      <img src="assets/img/rcestarnews_logo_nobg.png" alt="RCE Star News Logo" class="h-logo">
+      <div class="h-details">
+        <div class="h-comp-name"><strong>RCE STAR NEWS</strong></div>
+        <div class="h-contact">0977-645-2483 | 0918-398-0939</div>
+      </div>
+  </header>
+
+  <!-- this section is for the main navigation eg.hamburger menu when mobile -->
+  <nav>
+    <img src="assets/img/rcestarnews_logo_nobg.png" alt="RCE Star News Logo" class="n-logo">
+
+      <div class="n-comp-name">RCE STAR NEWS</div>
+      
+      <div class="n-menus">
+        <div class="menu-item">About</div>
+        <div class="menu-item">Services</div>
+        <div class="menu-item">Products</div>
+        <div class="menu-item">Contact</div>
+      </div>
+
+      <i class="bi bi-list hamburger-btn" onclick="toggleHamburgerMenu()"></i>
+  </nav>
+
+  <!-- main content -->
+  <main> 
+
+  </main>
+
+  <!-- footer -->
+  <footer>
+
+  </footer>
+
+  <div class="hamburger-menu">
+    <div class="hamburger-menu-item">About</div>
+    <div class="hamburger-menu-item">Services</div>
+    <div class="hamburger-menu-item">Products</div>
+    <div class="hamburger-menu-item">Contact</div>
+  </div>
+  
+  <script>
+    const hamburgerbtn = document.querySelector('.hamburger');
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+
+    function toggleHamburgerMenu() {
+        hamburgerMenu.classList.toggle('active');
+    }
+
+    hamburgerbtn.addEventListener('click', toggleHamburgerMenu);
+</script>
+
 </body>
 </html>
