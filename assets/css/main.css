@@ -1080,6 +1080,12 @@ section,
   font-weight: 700;
 }
 
+@media (max-width: 768px) {
+  .about .content h3 {
+    text-align: center;
+  }
+}
+
 .about .content ul {
   list-style: none;
   padding: 0;
