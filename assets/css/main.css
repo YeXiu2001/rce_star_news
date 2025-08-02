@@ -719,7 +719,7 @@ h6 {
   right: 15px;
   bottom: -15px;
   z-index: 99999;
-  background-color: var(--accent-color);
+  background-color: #162548;
   width: 44px;
   height: 44px;
   border-radius: 50px;
@@ -733,7 +733,7 @@ h6 {
 }
 
 .scroll-top:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  background-color: color-mix(in srgb, #162548, transparent 20%);
   color: var(--contrast-color);
 }
 
@@ -860,6 +860,40 @@ section,
 }
 
 /*--------------------------------------------------------------
+# Global Button Styles
+--------------------------------------------------------------*/
+.btn-get-started {
+  color: var(--contrast-color);
+  background: #162548;
+  font-family: var(--heading-font);
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 28px 12px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-get-started:hover {
+  color: var(--contrast-color);
+  background: color-mix(in srgb, #162548, transparent 15%);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+@media (max-width: 640px) {
+  .btn-get-started {
+    font-size: 13px;
+    padding: 8px 20px 10px 20px;
+  }
+}
+
+/*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
@@ -933,6 +967,17 @@ section,
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
+/* Tablet view - centered content */
+@media (max-width: 991px) and (min-width: 641px) {
+  .hero .col-lg-6 {
+    text-align: center;
+  }
+  
+  .hero .d-flex {
+    justify-content: center;
+  }
+}
+
 @media (max-width: 640px) {
   .hero h1 {
     font-size: 28px;
@@ -948,6 +993,14 @@ section,
   .hero .btn-get-started,
   .hero .btn-watch-video {
     font-size: 13px;
+  }
+  
+  .hero .col-lg-6 {
+    text-align: center;
+  }
+  
+  .hero .d-flex {
+    justify-content: center;
   }
 }
 
@@ -1014,6 +1067,14 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+.about .col-lg-6 img {
+  max-height: 600px;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 8px;
+}
+
 .about .content h3 {
   font-size: 1.75rem;
   font-weight: 700;
@@ -1090,7 +1151,7 @@ section,
   margin: 0 auto;
   width: 64px;
   height: 64px;
-  background: var(--accent-color);
+  background: #cf8a45;
   border-radius: 4px;
   display: flex;
   align-items: center;
@@ -1119,11 +1180,11 @@ section,
 }
 
 .services .service-item:hover {
-  border-color: var(--accent-color);
+  border-color: #cf8a45;
 }
 
 .services .service-item:hover h3 {
-  color: var(--accent-color);
+  color: #cf8a45;
 }
 
 /*--------------------------------------------------------------
@@ -1463,8 +1524,8 @@ section,
 
 .contact .info-item i {
   font-size: 20px;
-  color: var(--accent-color);
-  background: color-mix(in srgb, var(--accent-color), transparent 92%);
+  color: #cf8a45;
+  background: color-mix(in srgb, #cf8a45, transparent 92%);
   width: 44px;
   height: 44px;
   display: flex;
@@ -1489,7 +1550,7 @@ section,
 }
 
 .contact .info-item:hover i {
-  background: var(--accent-color);
+  background: #cf8a45;
   color: var(--contrast-color);
 }
 
@@ -1532,7 +1593,7 @@ section,
 
 .contact .php-email-form button[type=submit] {
   color: var(--contrast-color);
-  background: var(--accent-color);
+  background: #162548;
   border: 0;
   padding: 10px 30px;
   transition: 0.4s;
@@ -1540,7 +1601,7 @@ section,
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 25%);
+  background: color-mix(in srgb, #162548, transparent 25%);
 }
 
 /*--------------------------------------------------------------
@@ -1873,6 +1934,104 @@ section,
   .btn-theme {
     background-color: #162548;
     color: #fff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
   }
+}
 
+/*--------------------------------------------------------------
+# Custom Modal Theme Colors
+--------------------------------------------------------------*/
+/* Override Bootstrap's primary color for modal elements */
+.modal-header.bg-primary {
+  background: linear-gradient(135deg, #162548 0%, #1e2d5a 100%) !important;
+}
+
+.btn-primary {
+  background-color: #162548;
+  border-color: #162548;
+}
+
+.btn-primary:hover {
+  background-color: #1e2d5a;
+  border-color: #1e2d5a;
+}
+
+.text-primary {
+  color: #162548 !important;
+}
+
+.border-primary {
+  border-color: #162548 !important;
+}
+
+/* Form focus states */
+.form-control:focus, .form-select:focus {
+  border-color: #162548;
+  box-shadow: 0 0 0 0.2rem rgba(22, 37, 72, 0.25);
+}
+
+/* Loading spinner animation */
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Success Modal Styles */
+.success-icon {
+  animation: successPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes successPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.contact-card {
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.contact-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: #162548;
+}
+
+.icon-wrapper {
+  background: rgba(22, 37, 72, 0.1);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+#successModal .modal-content {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+#successModal .modal-header {
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+}
+
+#successModal .contact-card a {
+  color: #162548;
+  font-weight: 500;
+}
+
+#successModal .contact-card a:hover {
+  color: #0d1929;
+  text-decoration: underline !important;
 }
