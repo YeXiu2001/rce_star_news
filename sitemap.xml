@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://rcestarnews.com/</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://rcestarnews.com/assets/img/rce_logo.png</image:loc>
+      <image:title>RCE Star News - Pagadian City's Premier Local News Provider</image:title>
+      <image:caption>RCE Star News logo - trusted local news provider in Pagadian City and Zamboanga del Sur</image:caption>
+    </image:image>
+  </url>
+
+  <!-- About Section -->
+  <url>
+    <loc>https://rcestarnews.com/#about</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Services Section -->
+  <url>
+    <loc>https://rcestarnews.com/#services</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Team Section -->
+  <url>
+    <loc>https://rcestarnews.com/#team</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Contact Section -->
+  <url>
+    <loc>https://rcestarnews.com/#contact</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset> 

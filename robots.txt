@@ -1,0 +1,35 @@
+User-agent: *
+Allow: /
+
+# Allow all search engines to crawl the entire site
+Allow: /assets/img/
+Allow: /includes/
+
+# Sitemap location
+Sitemap: https://rcestarnews.com/sitemap.xml
+
+# Crawl-delay (optional - helps prevent server overload)
+Crawl-delay: 1
+
+# Specific directives for major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Block any potentially problematic bots
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: / 
